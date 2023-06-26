@@ -1,0 +1,194 @@
+
+/* En este archivo escriban su CSS */
+
+/* Fonts */
+/* Importar aquí la font */
+
+
+
+/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
+*  cuyos valores asigna por defecto el navegador.
+*/
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+}
+
+/* Para quitar los puntos a los items de listas */
+ul {
+    list-style: none;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Recomendaciones! 
+*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
+*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
+*
+*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
+*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
+*
+*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
+*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
+*
+*  - Usen mucho las herramientas para desarrolladores del navegador para ir
+*    probando el CSS que escriben, resolver dudas y problemas.
+*
+*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
+*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
+*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
+*/
+
+
+/* -------------------- Usar Samsung Galaxy S8 + para la versión movil -------------- */
+/* -------------------------------------- HEADER ------------------------------------ */
+
+header {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    border-bottom: double;
+    border-color: rgb(0, 12, 187);
+
+    width: 100%;
+    height: 12vh;
+
+    /* Posicionamos la cabecera en la parte superior y la fijamos */
+    top: 0;             
+	position: fixed;    
+}
+
+#logo {
+    height: 10vh;
+    width: 18vh;
+    margin:0%;
+    background-color: white;
+}
+
+header a {
+    margin: 5%;
+    font-size: 3vh;
+}
+
+/* ----------------------------------- PRINCIPAL ------------------------------- */
+
+#foto {
+  
+    width: 80%;
+    max-width: 400px;
+    max-height: 400px;
+    height: 40%;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 5%;
+    
+}
+
+/* Definir un tamaño de letra que dependa de la pantalla */
+h1 {
+    font-size: 5vh;
+}
+
+#semblanza {
+    text-align: center;
+    width: 100%;
+    padding: 4%;
+    background-color: rgba(175, 89, 158, 0.3);
+    border-radius: 10px;
+}
+
+/* Se alinea como bloque para que pueda estar apartado el botón */
+.boton{
+    display: inline-block; 
+    margin: 2%;
+    font-size: 3vh;
+    padding: 2vh;
+    border-radius: 25px;
+    background-color: #af599e;
+    color: white;
+}
+
+
+/* ------------------------------------ CONTACT --------------------------------- */
+
+#contact {
+    margin-top: 40%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    padding: 5%;
+    border-radius: 10px;
+    background-color: rgba(175, 89, 158, 0.3) ;
+}
+
+/* Definir un tamaño de letra que dependa de la pantalla */
+h2 {
+    font-size: 3.7vh;
+}
+
+/* ------------------------------------- ICONOS ---------------------------------- */
+/*  Cada ícono enlazado a una dirección mediante anclas */
+
+#iconos img {
+    width: 10%;
+    margin: 5%;
+    min-width: 60px;
+}
+
+/* -------------------------------------- FOOTER -------------------------------- */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5vh;
+    color: white;
+    background-color: #af599e;
+}
+
+/* ---------------------------------------- DETALLES --------------------------------- */
+
+/* tipo de letra */
+p, h1, h2, a, footer {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.2;
+}
+
+/* Definir un tamaño de letra que dependa de la pantalla */
+p {
+    font-size: 2.5vh;
+}
+
+/* Cada sección de la página cubra toda la pantalla */
+#begin, #social {
+    padding-top: 12vh;
+    min-height: 100vh;
+}
+
+/* Centrando todo */
+#begin, #social {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+}
