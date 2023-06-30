@@ -22,6 +22,11 @@
         <img id="logo" src="img/Logo.png">
         <a href="#begin"> Inicio </a>
         <a href="#contact"> Contactos </a>
+        <button class="switch" id="switch" >
+            <span><img id = "cambioModo" src="img/modoNoche.png"></span>
+            <span><img id = "cambioModo" src="img/modoDia.png"></span>
+        </button>
+        <!-- <img id = "cambioModo" src="img/modoNoche.png"> -->
     </header>
 
     <!-- ////////////// CONTENIDO DE LA PÁGINA //////////////////// -->
@@ -30,12 +35,16 @@
         <!-- ///////////// Información personal y fotografía ////////////////-->
             
         <article id="begin">
-            <img id="foto" src="img/pexels-athena-2582937.jpg">
-            <h1> Carlos Matute </h1>
-            <p id="semblanza"> Cuento con mas de 10 años de experiencia en servicio ténico para montaje y reparación de computadoras de gamma baja, media y alta.
-            Además también he realizado asesoramientos a distancia a personas con problemas o preguntas sobre sus equipos, de modo que puedan tomar las mejores decisiones a la hora de invertir su dinero. </p>
+            <div id="contenedorFoto">
+                <img id="foto" src="img/pexels-athena-2582937.jpg">
+            </div>
+            <div id="contenedorSemblanza">
+                <h1> Carlos Matute </h1>
+                <p id="semblanza"> Cuento con mas de 10 años de experiencia en servicio ténico para montaje y reparación de computadoras de gamma baja, media y alta.
+                Además también he realizado asesoramientos a distancia a personas con problemas o preguntas sobre sus equipos, de modo que puedan tomar las mejores decisiones a la hora de invertir su dinero. </p>
             
-            <a class="boton" href="https://drive.google.com/file/d/17HK-KedLzv530mWJQVEBw9dxZJXHfBMM/view?usp=share_link" target="_blank"> Descargar mi CV </a>
+                <a class="boton" href="https://drive.google.com/file/d/17HK-KedLzv530mWJQVEBw9dxZJXHfBMM/view?usp=share_link" target="_blank"> Descargar mi CV </a>
+            </div>
         </article>
 
         <!-- ////////////// CONTACTOS ///////////////  -->
@@ -70,5 +79,6 @@
     <!-- La estructura básica y la vinculación con CSS estan listas. A codear! 💪  -->
     <!-- En este archivo escriban su HTML -->
 
+    <script src="js/funcion.js"></script> 
 </body>
 </html>
