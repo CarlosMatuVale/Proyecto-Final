@@ -1,6 +1,7 @@
 const botonSw = document.querySelector("#switch");
 const descarga = document.querySelector(".boton");
 const fotoPersonal = document.querySelector("#foto");
+const colorBoton = document.querySelectorAll("a");
 
 // Funcionalidad para activar el modo nocturno
 botonSw.addEventListener("click", () => {
